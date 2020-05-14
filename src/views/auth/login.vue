@@ -66,7 +66,7 @@ export default {
         // 保存服务器返回的token值
         sessionStorage.setItem('token', data.token)
         // 登录成功跳转home组件
-        this.$router.push('/main/home')
+        this.$router.push('/main')
       })
     },
     // 重置表单
