@@ -1,6 +1,8 @@
 import index from '@/views/main/index'
 import welcome from '@/views/main/welcome'
-import list from '@/views/main/users/list'
+import users from '@/views/main/users/users'
+import rights from '@/views/main/rights/rights'
+import roles from '@/views/main/rights/roles'
 
 export default [
   {
@@ -9,7 +11,9 @@ export default [
     redirect: '/main/welcome',
     children: [
       { path: 'welcome', component: welcome },
-      { path: 'users', component: list }
+      { path: 'users', component: users },
+      { path: 'rights', component: rights },
+      { path: 'roles', component: roles },
     ]
   }
 ]

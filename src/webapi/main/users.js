@@ -30,4 +30,9 @@ export default {
   deleteUser(id) {
     return api.delete(`/users/${id}`)
   },
+
+  // 修改用户的权限
+  updateUserRole(id, roleId) {
+    return api.put(`/users/${id}/role`, {rid: roleId})
+  },
 }
