@@ -13,13 +13,13 @@ const instance = axios.create({
 // 请求拦截器
 // 除了登录请求，其他的请求发送到后台，必须要在请求头中添加
 // 键值对：key---Authorization value--token值（登录成功，服务器返回的token值）
-instance.interceptors.request.use(request => {
-  // console.log(request) 当前拦截的请求对象request
+// instance.interceptors.request.use(request => {
+//   // console.log(request) 当前拦截的请求对象request
 
-  // 在请求对象request上面，添加一个键值对：key---Authorization value--token值
-  request.headers.Authorization = sessionStorage.getItem('token')
-  // 必须返回请求对象request
-  return request
-})
+//   // 在请求对象request上面，添加一个键值对：key---Authorization value--token值
+//   request.headers.Authorization = sessionStorage.getItem('token')
+//   // 必须返回请求对象request
+//   return request
+// })
 
 export default instance

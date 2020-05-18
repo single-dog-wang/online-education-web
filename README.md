@@ -1,4 +1,4 @@
-# e-commerce-web
+# online-education-web
 
 ## Project setup
 ```
@@ -27,6 +27,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ##  使用前后端分离
 
-后台：node
+后台：springboot + springcloud 
 
 前端: vue.js
